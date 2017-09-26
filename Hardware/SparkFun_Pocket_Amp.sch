@@ -16436,8 +16436,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="1.6" y1="-0.11" x2="2.55" y2="0.11" layer="51" rot="R180"/>
 <rectangle x1="1.6" y1="-0.61" x2="2.55" y2="-0.39" layer="51" rot="R180"/>
 <rectangle x1="1.6" y1="-1.11" x2="2.55" y2="-0.89" layer="51" rot="R180"/>
-<text x="-0.8" y="1.7" size="0.3048" layer="25">&gt;NAME</text>
-<text x="-1" y="-2" size="0.3048" layer="27">&gt;VALUE</text>
+<text x="-0.8" y="0.43" size="0.3048" layer="25">&gt;NAME</text>
+<text x="-1" y="-0.73" size="0.3048" layer="27">&gt;VALUE</text>
 </package>
 <package name="DIP08">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -19943,6 +19943,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-0.12445625" y1="-1.8770625" x2="0.1244625" y2="-1.07188125" layer="31"/>
 <rectangle x1="0.375925" y1="-1.87198125" x2="0.62484375" y2="-1.0668" layer="31"/>
 <rectangle x1="0.87630625" y1="-1.8770625" x2="1.125225" y2="-1.07188125" layer="31"/>
+<text x="-1.27" y="2.032" size="0.508" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="0.508" layer="27">&gt;VALUE</text>
 </package>
 <package name="SOT23-5">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
@@ -20522,7 +20524,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="POT1" library="SparkFun-Resistors" deviceset="POTENTIOMETER_DUAL_W/SWITCH" device="" value=""/>
+<part name="POT1" library="SparkFun-Resistors" deviceset="POTENTIOMETER_DUAL_W/SWITCH" device="" value="20k"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="AUDIO_JACK_3.5MM" device="_SMD" value="AUDIO_JACK"/>
@@ -20545,7 +20547,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="R11" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3-KIT" value="470"/>
 <part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="D1" library="SparkFun-LED" deviceset="LED_RG" device="6300T15" value=""/>
+<part name="D1" library="SparkFun-LED" deviceset="LED_RG" device="6300T15" value="LED Inicator"/>
 <part name="U2" library="SparkFun-IC-Amplifiers" deviceset="LM358" device="KIT" value="LM358"/>
 <part name="U3" library="SparkFun-IC-Power" deviceset="TPS61200" device=""/>
 <part name="R9" library="SparkFun-Resistors" deviceset="2MOHMS" device="-0603-1/10W-1%" value="2.0M"/>
@@ -20576,7 +20578,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R17" library="SparkFun-Resistors" deviceset="2.0KOHM" device="-0603-1/10W-5%" value="2.0k"/>
 <part name="C14" library="SparkFun-Capacitors" deviceset="4.7UF" device="0603" value="4.7uF"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="USB_MICRO-B" device="_HALF_PTH" value="micro USB"/>
-<part name="J4" library="SparkFun-Connectors" deviceset="CONN_02" device="-JST-2MM-SMT"/>
+<part name="J4" library="SparkFun-Connectors" deviceset="CONN_02" device="-JST-2MM-SMT" value="Battery Conn."/>
 <part name="GND19" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND20" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND21" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -20682,10 +20684,11 @@ into volume pots</text>
 <instance part="SUPPLY8" gate="G$1" x="215.9" y="93.98"/>
 <instance part="R11" gate="G$1" x="215.9" y="60.96" rot="R90"/>
 <instance part="GND10" gate="1" x="215.9" y="40.64"/>
-<instance part="D1" gate="G$1" x="215.9" y="50.8"/>
+<instance part="D1" gate="G$1" x="215.9" y="50.8" smashed="yes">
+<attribute name="NAME" x="212.471" y="46.228" size="1.778" layer="95" font="vector" rot="R90"/>
+</instance>
 <instance part="D1" gate="G$2" x="215.9" y="76.2" smashed="yes">
 <attribute name="NAME" x="212.471" y="71.628" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="217.805" y="71.628" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
 <instance part="U2" gate="G1" x="200.66" y="68.58" rot="MR180"/>
 <instance part="U2" gate="G3" x="86.36" y="38.1" rot="MR180"/>
