@@ -15164,43 +15164,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-2.15" y="2.1"/>
 </polygon>
 </package>
-<package name="CAP-PTH-SMALL-KIT">
-<description>&lt;h3&gt;CAP-PTH-SMALL-KIT&lt;/h3&gt;
-Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.com/products/8375) or 22pF caps (http://www.sparkfun.com/products/8571).&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.</description>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.254" layer="21"/>
-<wire x1="-2.667" y1="1.27" x2="2.667" y2="1.27" width="0.254" layer="21"/>
-<wire x1="2.667" y1="1.27" x2="2.667" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="2.667" y1="-1.27" x2="-2.667" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="-2.667" y1="-1.27" x2="-2.667" y2="1.27" width="0.254" layer="21"/>
-<pad name="1" x="-1.397" y="0" drill="1.016" diameter="2.032" stop="no"/>
-<pad name="2" x="1.397" y="0" drill="1.016" diameter="2.032" stop="no"/>
-<polygon width="0.127" layer="30">
-<vertex x="-1.4021" y="-0.9475" curve="-90"/>
-<vertex x="-2.357" y="-0.0178" curve="-90.011749"/>
-<vertex x="-1.4046" y="0.9576" curve="-90"/>
-<vertex x="-0.4546" y="-0.0204" curve="-90.024193"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="-1.4046" y="-0.4395" curve="-90.012891"/>
-<vertex x="-1.8491" y="-0.0153" curve="-90"/>
-<vertex x="-1.4046" y="0.452" curve="-90"/>
-<vertex x="-0.9627" y="-0.0051" curve="-90.012967"/>
-</polygon>
-<polygon width="0.127" layer="30">
-<vertex x="1.397" y="-0.9475" curve="-90"/>
-<vertex x="0.4421" y="-0.0178" curve="-90.011749"/>
-<vertex x="1.3945" y="0.9576" curve="-90"/>
-<vertex x="2.3445" y="-0.0204" curve="-90.024193"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="1.3945" y="-0.4395" curve="-90.012891"/>
-<vertex x="0.95" y="-0.0153" curve="-90"/>
-<vertex x="1.3945" y="0.452" curve="-90"/>
-<vertex x="1.8364" y="-0.0051" curve="-90.012967"/>
-</polygon>
-</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -15360,75 +15323,6 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <technology name="">
 <attribute name="PROD_ID" value="CAP-12547" constant="no"/>
 <attribute name="VALUE" value="100uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="0.1UF" prefix="C">
-<description>&lt;h3&gt;0.1µF ceramic capacitors&lt;/h3&gt;
-&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-0402-16V-10%" package="0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-12416"/>
-<attribute name="VALUE" value="0.1uF"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-25V-(+80/-20%)" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-00810"/>
-<attribute name="VALUE" value="0.1uF"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-25V-5%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08604"/>
-<attribute name="VALUE" value="0.1uF"/>
-</technology>
-</technologies>
-</device>
-<device name="-KIT-EZ-50V-20%" package="CAP-PTH-SMALL-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08370"/>
-<attribute name="VALUE" value="0.1uF"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-100V-10%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08390"/>
-<attribute name="VALUE" value="0.1uF"/>
 </technology>
 </technologies>
 </device>
@@ -17174,8 +17068,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
 <part name="U1" library="SparkFun-IC-Amplifiers" deviceset="LM4853" device="" value="LM4853"/>
-<part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-5%" value="0.1uF"/>
-<part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-5%" value="0.1uF"/>
+<part name="C1" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
+<part name="C2" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="20KOHM" device="-0603-1/10W-1%" value="20k"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="20KOHM" device="-0603-1/10W-1%" value="20k"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="100UF-POLAR" device="-25V-20%(ELEC)" value="100uF"/>
@@ -17214,30 +17108,39 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="H2" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME" device=".1_INCH"/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
+<part name="JP2" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK" value=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="150.622" y="47.498" size="1.778" layer="97">JP1 Note:
-- Open (Default): Stereo Output (Left, Right, GND)
-- Closed: Mono Output (Left, Mono)
+<text x="104.902" y="50.038" size="1.778" layer="97">JP1 Note:
+- Open (Default): Stereo Output
+ (Outputs: Left, Right, GND)
+- Closed: Mono Output
+ (Outputs: Left, Mono)
 
-In mono mode, connect speaker to Left and Mono,
-NOT ground!</text>
-<wire x1="248.92" y1="78.74" x2="147.32" y2="78.74" width="0.2032" layer="97" style="shortdash"/>
-<wire x1="147.32" y1="78.74" x2="147.32" y2="35.56" width="0.2032" layer="97" style="shortdash"/>
-<wire x1="147.32" y1="78.74" x2="99.06" y2="78.74" width="0.2032" layer="97" style="shortdash"/>
+In mono mode, connect speaker 
+to Left and Mono, NOT ground!</text>
+<wire x1="248.92" y1="78.74" x2="99.06" y2="78.74" width="0.2032" layer="97" style="shortdash"/>
+<wire x1="99.06" y1="78.74" x2="99.06" y2="35.56" width="0.2032" layer="97" style="shortdash"/>
 <wire x1="99.06" y1="78.74" x2="99.06" y2="185.42" width="0.2032" layer="97" style="shortdash"/>
 <wire x1="99.06" y1="78.74" x2="0" y2="78.74" width="0.2032" layer="97" style="shortdash"/>
-<wire x1="147.32" y1="35.56" x2="0" y2="35.56" width="0.2032" layer="97" style="shortdash"/>
-<text x="149.86" y="73.66" size="2.54" layer="94">Jumper</text>
+<wire x1="99.06" y1="35.56" x2="0" y2="35.56" width="0.2032" layer="97" style="shortdash"/>
+<text x="101.6" y="73.66" size="2.54" layer="94">Jumper</text>
 <text x="101.6" y="180.34" size="2.54" layer="94">Audio Amplifier</text>
 <text x="2.54" y="180.34" size="2.54" layer="94">Header</text>
 <text x="2.54" y="73.66" size="2.54" layer="94">Pot Switch</text>
 <text x="170.942" y="11.43" size="2.54" layer="94">Alex Wende</text>
 <text x="238.506" y="7.112" size="2.54" layer="94">v01</text>
 <text x="33.02" y="165.1" size="2.54" layer="97">VIN: 2.4 - 5.5V</text>
-<text x="53.34" y="43.18" size="1.778" layer="97">Switch Current: 3A MAX</text>
+<text x="10.16" y="45.72" size="1.778" layer="97">Switch Current: 3A MAX</text>
+<wire x1="99.06" y1="35.56" x2="147.32" y2="35.56" width="0.2032" layer="97" style="shortdash"/>
+<text x="170.18" y="48.26" size="1.778" layer="97">JP2 Note:
+- Jumper should be open when in stereo operation.
+- In mono operation, JP2 can be either opened or
+ closed.
+- When closed, JP2 shorts C3, which will allow
+ lower frequencies to pass more easily.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -17275,8 +17178,8 @@ NOT ground!</text>
 <instance part="C5" gate="G$1" x="167.64" y="106.68" rot="MR0"/>
 <instance part="GND4" gate="1" x="167.64" y="93.98"/>
 <instance part="GND25" gate="1" x="124.46" y="93.98"/>
-<instance part="JP1" gate="G$1" x="228.6" y="58.42" rot="R90"/>
-<instance part="GND5" gate="1" x="228.6" y="48.26"/>
+<instance part="JP1" gate="G$1" x="162.56" y="60.96" rot="R90"/>
+<instance part="GND5" gate="1" x="162.56" y="50.8"/>
 <instance part="R7" gate="G$1" x="154.94" y="127" smashed="yes">
 <attribute name="NAME" x="154.94" y="125.476" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="154.94" y="125.476" size="1.778" layer="96" font="vector" align="top-center"/>
@@ -17289,9 +17192,11 @@ NOT ground!</text>
 <instance part="GND6" gate="1" x="50.8" y="109.22"/>
 <instance part="SUPPLY1" gate="G$1" x="50.8" y="144.78"/>
 <instance part="SUPPLY4" gate="G$1" x="58.42" y="144.78"/>
-<instance part="POT1" gate="G3" x="68.58" y="50.8"/>
-<instance part="SUPPLY5" gate="G$1" x="60.96" y="55.88"/>
-<instance part="SUPPLY6" gate="G$1" x="76.2" y="55.88"/>
+<instance part="POT1" gate="G3" x="25.4" y="53.34" smashed="yes">
+<attribute name="NAME" x="25.4" y="54.864" size="1.778" layer="95" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY5" gate="G$1" x="17.78" y="58.42"/>
+<instance part="SUPPLY6" gate="G$1" x="33.02" y="58.42"/>
 <instance part="C6" gate="G$1" x="218.44" y="154.94" rot="MR0"/>
 <instance part="GND7" gate="1" x="218.44" y="147.32"/>
 <instance part="SUPPLY7" gate="G$1" x="218.44" y="162.56"/>
@@ -17303,6 +17208,7 @@ NOT ground!</text>
 <instance part="H2" gate="G$1" x="238.76" y="25.4"/>
 <instance part="LOGO1" gate="G$1" x="20.32" y="7.62"/>
 <instance part="LOGO2" gate="G$1" x="116.84" y="17.78"/>
+<instance part="JP2" gate="G$1" x="208.28" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -17319,7 +17225,7 @@ NOT ground!</text>
 <junction x="147.32" y="132.08"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="LOUT+" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="LOUT"/>
 <wire x1="203.2" y1="132.08" x2="210.82" y2="132.08" width="0.1524" layer="91"/>
@@ -17331,6 +17237,12 @@ NOT ground!</text>
 <wire x1="195.58" y1="106.68" x2="210.82" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="106.68" x2="210.82" y2="132.08" width="0.1524" layer="91"/>
 <junction x="210.82" y="132.08"/>
+<label x="203.708" y="132.334" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="68.58" x2="200.66" y2="68.58" width="0.1524" layer="91"/>
+<label x="200.66" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LOUT" class="0">
@@ -17345,6 +17257,11 @@ NOT ground!</text>
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="48.26" y1="121.92" x2="53.34" y2="121.92" width="0.1524" layer="91"/>
 <label x="53.34" y="121.92" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<wire x1="213.36" y1="68.58" x2="215.9" y2="68.58" width="0.1524" layer="91"/>
+<label x="215.9" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ROUT" class="0">
@@ -17391,8 +17308,8 @@ NOT ground!</text>
 </segment>
 <segment>
 <pinref part="POT1" gate="G3" pin="2"/>
-<wire x1="73.66" y1="50.8" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="50.8" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="53.34" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="53.34" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="SUPPLY6" gate="G$1" pin="5V"/>
 </segment>
 <segment>
@@ -17430,7 +17347,7 @@ NOT ground!</text>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="228.6" y1="53.34" x2="228.6" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="55.88" x2="162.56" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -17507,9 +17424,9 @@ NOT ground!</text>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="228.6" y1="63.5" x2="228.6" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="66.04" x2="226.06" y2="66.04" width="0.1524" layer="91"/>
-<label x="226.06" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="162.56" y1="66.04" x2="162.56" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
+<label x="160.02" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -17590,8 +17507,8 @@ NOT ground!</text>
 </segment>
 <segment>
 <pinref part="POT1" gate="G3" pin="1"/>
-<wire x1="63.5" y1="50.8" x2="60.96" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="50.8" x2="60.96" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="53.34" x2="17.78" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="53.34" x2="17.78" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="G$1" pin="VIN"/>
 </segment>
 </net>
