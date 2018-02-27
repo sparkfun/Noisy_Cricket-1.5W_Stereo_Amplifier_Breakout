@@ -66,6 +66,8 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -15257,6 +15259,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </technology>
 </technologies>
 </device>
+<device name="-0603-16V-10%-X7R" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-13930"/>
+<attribute name="VALUE" value="1.0uF"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="100UF-POLAR" prefix="C">
@@ -15437,28 +15451,28 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
 <package name="POT-DUAL-SWITCH-PTH">
-<pad name="A1" x="0" y="2.5" drill="1"/>
-<pad name="A2" x="0" y="0" drill="1"/>
-<pad name="A3" x="0" y="-2.5" drill="1"/>
-<pad name="B1" x="-2.5" y="2.5" drill="1"/>
-<pad name="B2" x="-2.5" y="0" drill="1"/>
-<pad name="B3" x="-2.5" y="-2.5" drill="1"/>
-<pad name="SW1" x="-8.75" y="2.5" drill="1"/>
-<pad name="SW2" x="-8.75" y="-2.5" drill="1"/>
-<wire x1="-10.8" y1="4.5" x2="5" y2="4.5" width="0.127" layer="21"/>
-<wire x1="5" y1="4.5" x2="5" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="5" y1="-4.5" x2="-10.8" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="-10.8" y1="-4.5" x2="-10.8" y2="4.5" width="0.127" layer="21"/>
-<wire x1="5" y1="3.5" x2="12" y2="3.5" width="0.127" layer="51"/>
-<wire x1="12" y1="3.5" x2="12" y2="3" width="0.127" layer="51"/>
-<wire x1="12" y1="3" x2="12" y2="-3" width="0.127" layer="51"/>
-<wire x1="12" y1="-3" x2="12" y2="-3.5" width="0.127" layer="51"/>
-<wire x1="12" y1="-3.5" x2="5" y2="-3.5" width="0.127" layer="51"/>
-<wire x1="12" y1="3" x2="24" y2="3" width="0.127" layer="51"/>
-<wire x1="24" y1="3" x2="24" y2="-3" width="0.127" layer="51"/>
-<wire x1="24" y1="-3" x2="12" y2="-3" width="0.127" layer="51"/>
-<text x="-9" y="5" size="1.27" layer="25">&gt;NAME</text>
-<text x="-9" y="-6" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="A1" x="2.54" y="2.5" drill="1"/>
+<pad name="A2" x="2.54" y="0" drill="1"/>
+<pad name="A3" x="2.54" y="-2.5" drill="1"/>
+<pad name="B1" x="0.04" y="2.5" drill="1"/>
+<pad name="B2" x="0.04" y="0" drill="1"/>
+<pad name="B3" x="0.04" y="-2.5" drill="1"/>
+<pad name="SW1" x="-6.21" y="2.5" drill="1"/>
+<pad name="SW2" x="-6.21" y="-2.5" drill="1"/>
+<wire x1="-8.26" y1="4.5" x2="7.54" y2="4.5" width="0.127" layer="21"/>
+<wire x1="7.54" y1="4.5" x2="7.54" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="7.54" y1="-4.5" x2="-8.26" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-8.26" y1="-4.5" x2="-8.26" y2="4.5" width="0.127" layer="21"/>
+<wire x1="7.54" y1="3.5" x2="14.54" y2="3.5" width="0.127" layer="51"/>
+<wire x1="14.54" y1="3.5" x2="14.54" y2="3" width="0.127" layer="51"/>
+<wire x1="14.54" y1="3" x2="14.54" y2="-3" width="0.127" layer="51"/>
+<wire x1="14.54" y1="-3" x2="14.54" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="14.54" y1="-3.5" x2="7.54" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="14.54" y1="3" x2="26.54" y2="3" width="0.127" layer="51"/>
+<wire x1="26.54" y1="3" x2="26.54" y2="-3" width="0.127" layer="51"/>
+<wire x1="26.54" y1="-3" x2="14.54" y2="-3" width="0.127" layer="51"/>
+<text x="-6.46" y="5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-6.46" y="-6" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="AXIAL-0.1">
 <description>&lt;h3&gt;AXIAL-0.1&lt;/h3&gt;
@@ -15707,8 +15721,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-<deviceset name="20KOHM" prefix="R">
-<description>&lt;h3&gt;20kΩ resistor&lt;/h3&gt;
+<deviceset name="2.2KOHM" prefix="R">
+<description>&lt;h3&gt;2.2kΩ resistor&lt;/h3&gt;
 &lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -15721,20 +15735,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-09383"/>
-<attribute name="VALUE" value="20k"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-1/10W-5%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-09231"/>
-<attribute name="VALUE" value="20k"/>
+<attribute name="PROD_ID" value="RES-08272"/>
+<attribute name="VALUE" value="2.2k"/>
 </technology>
 </technologies>
 </device>
@@ -15871,8 +15873,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 <deviceset name="POTENTIOMETER_DUAL_W/SWITCH" prefix="POT">
 <gates>
-<gate name="G1" symbol="POTENTIOMETER" x="-10.16" y="0"/>
 <gate name="G2" symbol="POTENTIOMETER" x="0" y="0"/>
+<gate name="G1" symbol="POTENTIOMETER" x="-12.7" y="0"/>
 <gate name="G3" symbol="SWITCH-MOMENTARY" x="15.24" y="0"/>
 </gates>
 <devices>
@@ -15890,6 +15892,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="RES-13814"/>
+<attribute name="VALUE" value="20k" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -17070,8 +17073,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U1" library="SparkFun-IC-Amplifiers" deviceset="LM4853" device="" value="LM4853"/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
-<part name="R1" library="SparkFun-Resistors" deviceset="20KOHM" device="-0603-1/10W-1%" value="20k"/>
-<part name="R2" library="SparkFun-Resistors" deviceset="20KOHM" device="-0603-1/10W-1%" value="20k"/>
+<part name="R1" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="100UF-POLAR" device="-25V-20%(ELEC)" value="100uF"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="100UF-POLAR" device="-25V-20%(ELEC)" value="100uF"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
