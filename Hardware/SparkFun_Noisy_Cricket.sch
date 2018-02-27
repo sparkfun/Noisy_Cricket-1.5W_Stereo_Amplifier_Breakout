@@ -15997,11 +15997,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <packages>
 </packages>
 <symbols>
-<symbol name="5V">
-<description>&lt;h3&gt;5V Voltage Supply&lt;/h3&gt;</description>
+<symbol name="VCC">
+<description>&lt;h3&gt;VCC Voltage Supply&lt;/h3&gt;</description>
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
 <symbol name="DGND">
@@ -16019,11 +16019,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="5V" prefix="SUPPLY">
-<description>&lt;h3&gt;5V Supply Symbol&lt;/h3&gt;
-&lt;p&gt;Power supply symbol for a specifically-stated 5V source.&lt;/p&gt;</description>
+<deviceset name="VCC" prefix="SUPPLY">
+<description>&lt;h3&gt;VCC Voltage Supply&lt;/h3&gt;
+&lt;p&gt;Positive voltage supply (traditionally for a BJT device, C=collector).&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="5V" x="0" y="0"/>
+<gate name="G$1" symbol="VCC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -17081,8 +17081,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R4" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
 <part name="R5" library="SparkFun-Resistors" deviceset="100KOHM" device="-0603-1/10W-1%" value="100k"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="100KOHM" device="-0603-1/10W-1%" value="100k"/>
-<part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
-<part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
+<part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -17097,12 +17097,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_10" device="NO_SILK_PTH_FEMALE"/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
-<part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
-<part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%-X7R" value="1.0uF"/>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="FD1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="FD2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="FD3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
@@ -17168,14 +17168,14 @@ to Left and Mono, NOT ground!</text>
 <instance part="C3" gate="G$1" x="220.98" y="134.62" rot="R90"/>
 <instance part="C4" gate="G$1" x="220.98" y="127" rot="MR270"/>
 <instance part="R3" gate="G$1" x="228.6" y="111.76" rot="R90"/>
-<instance part="R4" gate="G$1" x="236.22" y="111.76" rot="R90"/>
+<instance part="R4" gate="G$1" x="238.76" y="111.76" rot="R90"/>
 <instance part="R5" gate="G$1" x="124.46" y="124.46" rot="R270"/>
 <instance part="R6" gate="G$1" x="172.72" y="147.32" rot="R90"/>
 <instance part="SUPPLY2" gate="G$1" x="172.72" y="154.94"/>
 <instance part="SUPPLY3" gate="G$1" x="205.74" y="154.94"/>
 <instance part="GND1" gate="1" x="205.74" y="111.76"/>
 <instance part="GND2" gate="1" x="228.6" y="93.98"/>
-<instance part="GND3" gate="1" x="236.22" y="93.98"/>
+<instance part="GND3" gate="1" x="238.76" y="93.98"/>
 <instance part="POT1" gate="G1" x="187.96" y="106.68" rot="MR90"/>
 <instance part="POT1" gate="G2" x="187.96" y="93.98" rot="MR90"/>
 <instance part="C5" gate="G$1" x="167.64" y="106.68" rot="MR0"/>
@@ -17252,9 +17252,11 @@ to Left and Mono, NOT ground!</text>
 <segment>
 <pinref part="C3" gate="G$1" pin="-"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="134.62" x2="236.22" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="134.62" x2="236.22" y2="116.84" width="0.1524" layer="91"/>
-<label x="236.22" y="134.62" size="1.27" layer="95" xref="yes"/>
+<wire x1="226.06" y1="134.62" x2="238.76" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="134.62" x2="238.76" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="134.62" x2="238.76" y2="116.84" width="0.1524" layer="91"/>
+<label x="241.3" y="134.62" size="1.27" layer="95" xref="yes"/>
+<junction x="238.76" y="134.62"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
@@ -17272,8 +17274,11 @@ to Left and Mono, NOT ground!</text>
 <pinref part="C4" gate="G$1" pin="-"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="226.06" y1="127" x2="228.6" y2="127" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="127" x2="231.14" y2="127" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="127" x2="228.6" y2="127" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="127" x2="228.6" y2="116.84" width="0.1524" layer="91"/>
-<label x="228.6" y="127" size="1.27" layer="95" xref="yes"/>
+<label x="231.14" y="127" size="1.27" layer="95" xref="yes"/>
+<junction x="228.6" y="127"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="4"/>
@@ -17285,9 +17290,9 @@ to Left and Mono, NOT ground!</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="SDN"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="177.8" y1="137.16" x2="162.56" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="137.16" x2="162.56" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="139.7" x2="124.46" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="137.16" x2="160.02" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="137.16" x2="160.02" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="139.7" x2="124.46" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="139.7" x2="124.46" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -17295,17 +17300,17 @@ to Left and Mono, NOT ground!</text>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="152.4" x2="172.72" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="SUPPLY2" gate="G$1" pin="5V"/>
+<pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VDD"/>
 <wire x1="203.2" y1="139.7" x2="205.74" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="139.7" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="SUPPLY3" gate="G$1" pin="5V"/>
+<pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="9"/>
-<pinref part="SUPPLY4" gate="G$1" pin="5V"/>
+<pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
 <wire x1="48.26" y1="137.16" x2="58.42" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="137.16" x2="58.42" y2="144.78" width="0.1524" layer="91"/>
 </segment>
@@ -17313,12 +17318,12 @@ to Left and Mono, NOT ground!</text>
 <pinref part="POT1" gate="G3" pin="2"/>
 <wire x1="30.48" y1="53.34" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="53.34" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="SUPPLY6" gate="G$1" pin="5V"/>
+<pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="218.44" y1="160.02" x2="218.44" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="SUPPLY7" gate="G$1" pin="5V"/>
+<pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -17335,7 +17340,7 @@ to Left and Mono, NOT ground!</text>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="236.22" y1="106.68" x2="236.22" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="106.68" x2="238.76" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -17422,8 +17427,11 @@ to Left and Mono, NOT ground!</text>
 <pinref part="U1" gate="G$1" pin="HP-IN"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="139.7" x2="172.72" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="139.7" x2="170.18" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="139.7" x2="172.72" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="139.7" x2="172.72" y2="142.24" width="0.1524" layer="91"/>
-<label x="172.72" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="170.18" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
+<junction x="172.72" y="139.7"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
