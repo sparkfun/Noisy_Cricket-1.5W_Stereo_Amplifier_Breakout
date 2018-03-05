@@ -15451,14 +15451,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
 <package name="POT-DUAL-SWITCH-PTH">
-<pad name="A1" x="2.54" y="2.5" drill="1"/>
-<pad name="A2" x="2.54" y="0" drill="1"/>
-<pad name="A3" x="2.54" y="-2.5" drill="1"/>
-<pad name="B1" x="0.04" y="2.5" drill="1"/>
-<pad name="B2" x="0.04" y="0" drill="1"/>
-<pad name="B3" x="0.04" y="-2.5" drill="1"/>
-<pad name="SW1" x="-6.21" y="2.5" drill="1"/>
-<pad name="SW2" x="-6.21" y="-2.5" drill="1"/>
+<pad name="A1" x="2.54" y="2.5" drill="1" diameter="1.8796"/>
+<pad name="A2" x="2.54" y="0" drill="1" diameter="1.8796"/>
+<pad name="A3" x="2.54" y="-2.5" drill="1" diameter="1.8796"/>
+<pad name="B1" x="0.04" y="2.5" drill="1" diameter="1.8796"/>
+<pad name="B2" x="0.04" y="0" drill="1" diameter="1.8796"/>
+<pad name="B3" x="0.04" y="-2.5" drill="1" diameter="1.8796"/>
+<pad name="SW1" x="-6.21" y="2.5" drill="1" diameter="1.8796"/>
+<pad name="SW2" x="-6.21" y="-2.5" drill="1" diameter="1.8796"/>
 <wire x1="-8.26" y1="4.5" x2="7.54" y2="4.5" width="0.127" layer="21"/>
 <wire x1="7.54" y1="4.5" x2="7.54" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="7.54" y1="-4.5" x2="-8.26" y2="-4.5" width="0.127" layer="21"/>
@@ -17134,7 +17134,7 @@ to Left and Mono, NOT ground!</text>
 <text x="2.54" y="180.34" size="2.54" layer="94">Header</text>
 <text x="2.54" y="73.66" size="2.54" layer="94">Pot Switch</text>
 <text x="170.942" y="11.43" size="2.54" layer="94">Alex Wende</text>
-<text x="238.506" y="7.112" size="2.54" layer="94">v01</text>
+<text x="238.506" y="7.112" size="2.54" layer="94">v10</text>
 <text x="33.02" y="165.1" size="2.54" layer="97">VIN: 2.4 - 5.5V</text>
 <text x="10.16" y="45.72" size="1.778" layer="97">Switch Current: 3A MAX</text>
 <wire x1="99.06" y1="35.56" x2="147.32" y2="35.56" width="0.2032" layer="97" style="shortdash"/>

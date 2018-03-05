@@ -29,9 +29,9 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -46,15 +46,15 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -2387,14 +2387,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
 <package name="POT-DUAL-SWITCH-PTH">
-<pad name="A1" x="2.54" y="2.5" drill="1"/>
-<pad name="A2" x="2.54" y="0" drill="1"/>
-<pad name="A3" x="2.54" y="-2.5" drill="1"/>
-<pad name="B1" x="0.04" y="2.5" drill="1"/>
-<pad name="B2" x="0.04" y="0" drill="1"/>
-<pad name="B3" x="0.04" y="-2.5" drill="1"/>
-<pad name="SW1" x="-6.21" y="2.5" drill="1"/>
-<pad name="SW2" x="-6.21" y="-2.5" drill="1"/>
+<pad name="A1" x="2.54" y="2.5" drill="1" diameter="1.8796"/>
+<pad name="A2" x="2.54" y="0" drill="1" diameter="1.8796"/>
+<pad name="A3" x="2.54" y="-2.5" drill="1" diameter="1.8796"/>
+<pad name="B1" x="0.04" y="2.5" drill="1" diameter="1.8796"/>
+<pad name="B2" x="0.04" y="0" drill="1" diameter="1.8796"/>
+<pad name="B3" x="0.04" y="-2.5" drill="1" diameter="1.8796"/>
+<pad name="SW1" x="-6.21" y="2.5" drill="1" diameter="1.8796"/>
+<pad name="SW2" x="-6.21" y="-2.5" drill="1" diameter="1.8796"/>
 <wire x1="-8.26" y1="4.5" x2="7.54" y2="4.5" width="0.127" layer="21"/>
 <wire x1="7.54" y1="4.5" x2="7.54" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="7.54" y1="-4.5" x2="-8.26" y2="-4.5" width="0.127" layer="21"/>
@@ -3055,8 +3055,8 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="14.173928125" y1="13.208" x2="13.192" y2="14.189928125" width="0.254" layer="1"/>
 <wire x1="13.192" y1="14.189928125" x2="13.192" y2="14.875" width="0.254" layer="1"/>
 <wire x1="22.667628125" y1="13.208" x2="24.445628125" y2="11.43" width="0.254" layer="1"/>
-<wire x1="24.445628125" y1="11.43" x2="26.67" y2="11.43" width="0.254" layer="1"/>
-<wire x1="26.67" y1="11.43" x2="27.94" y2="12.7" width="0.254" layer="1"/>
+<wire x1="24.445628125" y1="11.43" x2="26.67" y2="11.43" width="0.2032" layer="1"/>
+<wire x1="26.67" y1="11.43" x2="27.94" y2="12.7" width="0.2032" layer="1"/>
 <wire x1="22.86" y1="21.971" x2="27.94" y2="16.891" width="0.254" layer="1"/>
 <wire x1="27.94" y1="16.891" x2="27.94" y2="15.2" width="0.254" layer="1"/>
 </signal>
